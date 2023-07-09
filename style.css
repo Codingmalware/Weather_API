@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+   
+    background: linear-gradient(-60deg,#0C134F,#1D267D,#5C469C,#E5BEEC,#FDE2F3);
+    background-size: 300% 300%;
+    animation: color 5s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.heading{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+.wth-img{
+    width: 50px;
+    margin-top: -6px;
+}
+.weather_frame{
+    width: 90%;
+    max-width: 470px;
+    border-radius: 20px;
+    background : linear-gradient(135deg,#176B87,#64CCC5);
+    color: #fff;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_box input{
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    margin-right: 16px;
+    flex: 1;
+    font-size: 18px;
+}
+
+.search_box button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.search_box button img{
+    width: 16px;
+}
+
+.weather{
+    display: none;
+}
+.weather_icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px ;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400 ;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+.Humidity, .Wind_Speed{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.error{
+    display: none;
+}
+
+.error_img{
+    width: 130px;
+    margin-top: 30px;
+}
+

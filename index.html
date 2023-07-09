@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/weather-icon.png">
+    </head>
+    <body>
+            <div class="heading">
+                <h1>Weather</h1>
+                <img src="images/weather.png" class="wth-img" alt="">
+            </div>
+            <div class="weather_frame">
+            <div class="search_box">
+                <input type="text" placeholder="Enter the City Name" spellcheck="false">
+                <button><img src="images/search.png" alt="Search Icon"></button>
+            </div>
+            <div class="error">
+                <img src="images/not-found.png" class="error_img" alt="Invalid City Name">
+            </div>
+            <div class="weather">
+                <img src="images/clouds.png" class="weather_icon" alt="Image">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Rishikesh</h2>
+                <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity">
+                    <div >
+                        <p class="Humidity">50%</p>
+                        <p>Humidity</p>
+                    </div> 
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind_Speed">
+                    <div >
+                        <p class="Wind_Speed">4 km/h</p>
+                        <p >Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
